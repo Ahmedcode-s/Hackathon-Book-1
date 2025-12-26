@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Physical AI & Humanoid Robotics',
+  tagline: 'A Comprehensive Guide to Building Intelligent Robotic Systems',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://hackathon-book-1-nine.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -83,9 +83,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Physical AI & Humanoid Robotics',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Physical AI & Humanoid Robotics Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -93,9 +93,13 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Learning Modules',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/docs/intro',
+            label: 'Get Started',
+            position: 'left',
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -107,11 +111,40 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Learning Modules',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Module 1: ROS 2 Fundamentals',
+                to: '/docs/module-1-ros2/intro-to-ros2-and-physical-ai',
+              },
+              {
+                label: 'Module 2: Digital Twin Simulation',
+                to: '/docs/module-2-digital-twin/intro',
+              },
+              {
+                label: 'Module 3: AI-Robot Brain',
+                to: '/docs/module-3-ai-brain/intro',
+              },
+              {
+                label: 'Module 4: Vision-Language-Action',
+                to: '/docs/module-4-vla/intro',
+              },
+            ],
+          },
+          {
+            title: 'Resources',
+            items: [
+              {
+                label: 'ROS 2 Documentation',
+                href: 'https://docs.ros.org/',
+              },
+              {
+                label: 'NVIDIA Isaac™',
+                href: 'https://developer.nvidia.com/isaac',
+              },
+              {
+                label: 'Gazebo Simulation',
+                href: 'https://gazebosim.org/',
               },
             ],
           },
@@ -119,34 +152,21 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
+                label: 'GitHub Repository',
                 href: 'https://github.com/facebook/docusaurus',
+              },
+              {
+                label: 'Robotics Stack Exchange',
+                href: 'https://robotics.stackexchange.com/',
+              },
+              {
+                label: 'ROS Answers',
+                href: 'https://answers.ros.org/questions/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Education. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
