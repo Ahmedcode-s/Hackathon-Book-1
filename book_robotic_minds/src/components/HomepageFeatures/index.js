@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Comprehensive Robotics Curriculum',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Learn the complete stack of humanoid robotics development from ROS 2 fundamentals
+        to advanced AI integration with NVIDIA Isaac™ and Vision-Language-Action systems.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Hands-On Learning Approach',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Build practical skills through real-world projects and simulations with
+        Gazebo, Unity, and digital twin technologies.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Cutting-Edge Technologies',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Master state-of-the-art tools and frameworks including ROS 2, NVIDIA Isaac™,
+        and advanced AI systems for robotics.
       </>
     ),
   },

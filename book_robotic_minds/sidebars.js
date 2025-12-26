@@ -75,11 +75,9 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Tutorial',
+      label: 'Getting Started',
       items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/create-a-page',
-        'tutorial-basics/deploy-your-site',
+        'intro',
       ],
     },
   ],
