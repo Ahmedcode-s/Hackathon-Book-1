@@ -48,7 +48,7 @@ const Chatbot = () => {
       const selectedText = window.getSelection()?.toString()?.trim() || null;
 
       // Call the backend API
-      const response = await fetch('http://localhost:8000/api/v1/chat', {
+      const response = await fetch('http://localhost:8001/api/v1/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
