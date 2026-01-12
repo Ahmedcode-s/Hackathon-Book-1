@@ -50,7 +50,7 @@ const Chatbot = () => {
       // Determine the API base URL based on environment
       const apiBaseUrl = typeof window !== 'undefined' && window.location.hostname !== 'localhost'
         ? '' // For production deployment, use relative path to the same domain
-        : 'http://localhost:8000'; // For local development
+        : 'http://localhost:8001'; // For local development (changed from 8000 to 8001 to match backend)
 
       // Call the backend API
       const response = await fetch(`${apiBaseUrl}/api/v1/chat`, {
