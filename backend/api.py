@@ -76,7 +76,16 @@ app = FastAPI(
 # Add CORS middleware to allow frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3001", "http://127.0.0.1:3001", "http://localhost:3000", "http://127.0.0.1:3000"],  # Allow Docusaurus dev server
+    allow_origins=[
+        "http://localhost:3001",
+        "http://127.0.0.1:3001",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://hackathon-book-1-five.vercel.app",  # Production deployment
+        "http://hackathon-book-1-five.vercel.app",   # In case of http requests
+        "https://www.hackathon-book-1-five.vercel.app",  # With www
+        "http://www.hackathon-book-1-five.vercel.app"    # With www and http
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
