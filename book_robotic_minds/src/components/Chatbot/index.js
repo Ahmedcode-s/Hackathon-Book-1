@@ -47,8 +47,13 @@ const Chatbot = () => {
       // Get selected text from the page if available
       const selectedText = window.getSelection()?.toString()?.trim() || null;
 
+      // Determine the API base URL based on environment
+      const apiBaseUrl = typeof window !== 'undefined' && window.location.hostname !== 'localhost'
+        ? '' // For production deployment, use relative path to the same domain
+        : 'http://localhost:8000'; // For local development
+
       // Call the backend API
-      const response = await fetch('http://localhost:8000/api/v1/chat', {
+      const response = await fetch(`${apiBaseUrl}/api/v1/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
