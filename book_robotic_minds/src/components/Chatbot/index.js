@@ -47,10 +47,8 @@ const Chatbot = () => {
       // Get selected text from the page if available
       const selectedText = window.getSelection()?.toString()?.trim() || null;
 
-      // Determine the API base URL based on environment
-      const apiBaseUrl = typeof window !== 'undefined' && window.location.hostname !== 'localhost'
-        ? '' // For production deployment, use relative path to the same domain
-        : 'http://localhost:8001'; // For local development (changed from 8000 to 8001 to match backend)
+      // Use the deployed backend API URL
+      const apiBaseUrl = 'https://ahmedcodesatnight-rag-backend.hf.space';
 
       // Call the backend API
       const response = await fetch(`${apiBaseUrl}/api/v1/chat`, {
